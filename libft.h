@@ -6,7 +6,7 @@
 /*   By: aridolfi <aridolfi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 19:00:36 by aridolfi          #+#    #+#             */
-/*   Updated: 2016/12/03 12:50:35 by aridolfi         ###   ########.fr       */
+/*   Updated: 2016/12/14 10:56:32 by aridolfi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,14 @@
 
 # define FALSE	0
 # define TRUE	(!FALSE)
+# define BUFF_SIZE 4096
+# define ERROR -1
 
 # include <unistd.h>
 # include <stdlib.h>
 # include <string.h>
+# include <sys/types.h>
+# include <sys/uio.h>
 
 typedef struct	s_list
 {
@@ -26,6 +30,13 @@ typedef struct	s_list
 	size_t			content_size;
 	struct s_list	*next;
 }				t_list;
+
+typedef struct	s_fd
+{
+	char			*buff;
+	int				fd;
+	struct s_fd		*next;
+}				t_fd;
 
 void			*ft_memset(void *s, int c, size_t n);
 void			ft_bzero(void *s, size_t n);
@@ -94,5 +105,7 @@ void			ft_memswap(void *a, void *b);
 void			ft_lstback(t_list **begin_list, t_list *new);
 void			ft_int_tab_bubble(int *tab, size_t size);
 int				ft_strfind(const char *s, int c);
+
+int				get_next_line(const int fd, char **line);
 
 #endif
