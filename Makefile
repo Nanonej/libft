@@ -6,7 +6,7 @@
 #    By: aridolfi <aridolfi@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/07 22:47:07 by aridolfi          #+#    #+#              #
-#    Updated: 2016/12/14 13:49:38 by aridolfi         ###   ########.fr        #
+#    Updated: 2016/12/18 18:32:42 by aridolfi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -53,6 +53,8 @@ SRCS 	=	ft_atoi.c			\
 			ft_putnbr.c			\
 			ft_putstr_fd.c		\
 			ft_putstr.c			\
+			ft_putwchar_fd.c	\
+			ft_putwchar.c		\
 			ft_strcat.c			\
 			ft_strchr.c			\
 			ft_strclr.c			\
