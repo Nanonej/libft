@@ -6,7 +6,7 @@
 #    By: aridolfi <aridolfi@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/07 22:47:07 by aridolfi          #+#    #+#              #
-#    Updated: 2016/12/18 18:32:42 by aridolfi         ###   ########.fr        #
+#    Updated: 2017/01/10 13:59:01 by aridolfi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,6 +28,7 @@ SRCS 	=	ft_atoi.c			\
 			ft_isdigit.c		\
 			ft_isprint.c		\
 			ft_iswhitespace.c	\
+			ft_itoa_base.c		\
 			ft_itoa.c			\
 			ft_lstadd.c			\
 			ft_lstback.c		\
