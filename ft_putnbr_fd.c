@@ -6,7 +6,7 @@
 /*   By: aridolfi <aridolfi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/11 22:05:38 by aridolfi          #+#    #+#             */
-/*   Updated: 2016/11/11 22:12:49 by aridolfi         ###   ########.fr       */
+/*   Updated: 2017/01/10 14:55:59 by aridolfi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,28 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
+	int		i;
+	int		dc;
+	char	*tmp;
+
+	i = 1;
 	if (n == -2147483648)
-	{
-		ft_putchar_fd('-', fd);
-		ft_putchar_fd('2', fd);
-		n = 147483648;
-	}
+		ft_putstr_fd("-2147483648", fd);
+		return ;
+	dc = ft_digitcount(n);
+	if (!(tmp = ft_strnew(dc)))
+		return ;
 	if (n < 0)
 	{
 		n = -n;
-		ft_putchar_fd('-', fd);
+		tmp[0] = '-';
+		i = 1;
 	}
-	if (n / 10)
-		ft_putnbr_fd(n / 10, fd);
-	ft_putchar_fd(n % 10 + 48, fd);
+	while (n)
+	{
+		tmp[dc - i++] = (n % 10 + 48);
+		n /= 10;
+	}
+	ft_putstr_fd(tmp, fd);
+	free(tmp);
 }
