@@ -6,11 +6,11 @@
 /*   By: aridolfi <aridolfi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/13 14:51:52 by aridolfi          #+#    #+#             */
-/*   Updated: 2017/01/16 11:27:05 by aridolfi         ###   ########.fr       */
+/*   Updated: 2017/01/17 14:46:45 by aridolfi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 void		*ft_memcat(void *s1, void *s2, size_t len1, size_t len2)
 {
