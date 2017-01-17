@@ -6,7 +6,7 @@
 #    By: aridolfi <aridolfi@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/07 22:47:07 by aridolfi          #+#    #+#              #
-#    Updated: 2017/01/17 14:42:11 by aridolfi         ###   ########.fr        #
+#    Updated: 2017/01/17 14:43:36 by aridolfi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,6 +39,7 @@ SRCS 	=	free_swap.c			\
 			ft_lstmap.c			\
 			ft_lstnew.c			\
 			ft_memalloc.c		\
+			ft_memcat.c			\
 			ft_memccpy.c		\
 			ft_memchr.c			\
 			ft_memcmp.c			\
