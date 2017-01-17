@@ -6,7 +6,7 @@
 #    By: aridolfi <aridolfi@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/07 22:47:07 by aridolfi          #+#    #+#              #
-#    Updated: 2017/01/10 13:59:01 by aridolfi         ###   ########.fr        #
+#    Updated: 2017/01/17 14:42:11 by aridolfi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,8 @@ CC		= cc
 CFLAGS	= -Wall -Wextra -Werror
 
 # SRCS & OBJT
-SRCS 	=	ft_atoi.c			\
+SRCS 	=	free_swap.c			\
+			ft_atoi.c			\
 			ft_bzero.c			\
 			ft_digitcount.c		\
 			ft_int_tab_bubble.c	\
