@@ -6,7 +6,7 @@
 #    By: aridolfi <aridolfi@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/07 22:47:07 by aridolfi          #+#    #+#              #
-#    Updated: 2017/01/19 11:12:26 by aridolfi         ###   ########.fr        #
+#    Updated: 2017/01/19 11:28:06 by aridolfi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -134,7 +134,7 @@ $(NAME): $(OBJT)
 
 %.o: %.c
 	@echo "--$(LOG_CLEAR)$(LOG_GREEN)$(NAME)$(LOG_NOCOLOR) ........................ $(LOG_VIOLET)$<$(LOG_NOCOLOR)$(LOG_UP)"
-	@$(CC) $(CFLAGS) $(ADDFLAGS) -c -o $@ $^ -I ./printf
+	@$(CC) $(CFLAGS) $(ADDFLAGS) -c -o $@ $^ -I ./printf -I ./
 
 clean:
 	@rm -f $(OBJT)

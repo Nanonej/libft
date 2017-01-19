@@ -6,16 +6,17 @@
 /*   By: aridolfi <aridolfi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/14 10:38:24 by aridolfi          #+#    #+#             */
-/*   Updated: 2017/01/19 11:04:59 by aridolfi         ###   ########.fr       */
+/*   Updated: 2017/01/19 11:36:55 by aridolfi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
-# include "../libft.h"
+# include "libft.h"
 # include <stdarg.h>
 # include <wchar.h>
+# include <stdint.h>
 
 typedef enum	e_mod
 {

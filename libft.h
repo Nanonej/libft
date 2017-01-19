@@ -6,7 +6,7 @@
 /*   By: aridolfi <aridolfi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 19:00:36 by aridolfi          #+#    #+#             */
-/*   Updated: 2017/01/19 11:09:38 by aridolfi         ###   ########.fr       */
+/*   Updated: 2017/01/19 11:36:57 by aridolfi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,14 @@
 # define BUFF_SIZE 4096
 # define ERROR -1
 
+# include "ft_printf.h"
 # include <unistd.h>
 # include <stdlib.h>
 # include <string.h>
 # include <sys/types.h>
 # include <sys/uio.h>
 # include <wchar.h>
+# include <stdint.h>
 
 typedef struct	s_list
 {
