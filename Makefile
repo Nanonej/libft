@@ -6,7 +6,7 @@
 #    By: aridolfi <aridolfi@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/07 22:47:07 by aridolfi          #+#    #+#              #
-#    Updated: 2017/01/17 14:43:36 by aridolfi         ###   ########.fr        #
+#    Updated: 2017/01/19 11:10:24 by aridolfi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -85,6 +85,7 @@ SRCS 	=	free_swap.c			\
 			ft_strstr.c			\
 			ft_strsub.c			\
 			ft_strtrim.c		\
+			ft_strupper.c		\
 			ft_tolower.c		\
 			ft_toupper.c		\
 			get_next_line.c		\
@@ -124,7 +125,7 @@ $(NAME): $(OBJT)
 
 %.o: %.c
 	@echo "--$(LOG_CLEAR)$(LOG_GREEN)$(NAME)$(LOG_NOCOLOR) ........................ $(LOG_VIOLET)$<$(LOG_NOCOLOR)$(LOG_UP)"
-	@$(CC) $(CFLAGS) $(ADDFLAGS) -c -o $@ $^
+	@$(CC) $(CFLAGS) $(ADDFLAGS) -c -o $@ $^ -I ./printf
 
 clean:
 	@rm -f $(OBJT)
