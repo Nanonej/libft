@@ -6,7 +6,7 @@
 #    By: aridolfi <aridolfi@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/07 22:47:07 by aridolfi          #+#    #+#              #
-#    Updated: 2017/02/06 14:51:12 by aridolfi         ###   ########.fr        #
+#    Updated: 2017/03/31 14:42:31 by aridolfi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,6 +22,7 @@ SRCS 	=	free_swap.c			\
 			ft_atoi.c			\
 			ft_bzero.c			\
 			ft_digitcount.c		\
+			ft_insertstr.c		\
 			ft_int_tab_bubble.c	\
  			ft_isalnum.c 		\
 			ft_isalpha.c		\
@@ -122,7 +123,7 @@ LOG_WHITE		= \033[1;37m
 
 # Bonus
 
-.PHONY:		all clean fclean re
+.PHONY:		clean fclean
 
 # **************************************************************************** #
 
