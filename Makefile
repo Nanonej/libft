@@ -6,105 +6,114 @@
 #    By: aridolfi <aridolfi@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/07 22:47:07 by aridolfi          #+#    #+#              #
-#    Updated: 2017/03/31 14:42:31 by aridolfi         ###   ########.fr        #
+#    Updated: 2018/02/26 12:16:38 by aridolfi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-# Binary
+# Executable
 NAME	= libft.a
 
 # Compilation
 CC		= cc
 CFLAGS	= -Wall -Wextra -Werror
 
-# SRCS & OBJT
-SRCS 	=	free_swap.c			\
-			ft_atoi.c			\
-			ft_bzero.c			\
-			ft_digitcount.c		\
-			ft_insertstr.c		\
-			ft_int_tab_bubble.c	\
- 			ft_isalnum.c 		\
-			ft_isalpha.c		\
-			ft_isascii.c		\
-			ft_isdigit.c		\
-			ft_isprint.c		\
-			ft_iswhitespace.c	\
-			ft_itoa_base.c		\
-			ft_itoa.c			\
-			ft_lstadd.c			\
-			ft_lstback.c		\
-			ft_lstdel.c			\
-			ft_lstdelone.c		\
-			ft_lstiter.c		\
-			ft_lstmap.c			\
-			ft_lstnew.c			\
-			ft_memalloc.c		\
-			ft_memcat.c			\
-			ft_memccpy.c		\
-			ft_memchr.c			\
-			ft_memcmp.c			\
-			ft_memcpy.c			\
-			ft_memdel.c			\
-			ft_memmove.c		\
-			ft_memset.c			\
-			ft_memswap.c		\
-			ft_putchar_fd.c		\
-			ft_putchar.c		\
-			ft_putendl_fd.c		\
-			ft_putendl.c		\
-			ft_putnbr_fd.c		\
-			ft_putnbr.c			\
-			ft_putstr_fd.c		\
-			ft_putstr.c			\
-			ft_putwchar_fd.c	\
-			ft_putwchar.c		\
-			ft_strcat.c			\
-			ft_strchr.c			\
-			ft_strclr.c			\
-			ft_strcmp.c			\
-			ft_strcpy.c			\
-			ft_strdel.c			\
-			ft_strdup.c			\
-			ft_strendcpy.c		\
-			ft_strequ.c			\
-			ft_strfind.c		\
-			ft_striter.c		\
-			ft_striteri.c		\
-			ft_strjoin.c		\
-			ft_strlcat.c		\
-			ft_strlen.c			\
-			ft_strmap.c			\
-			ft_strmapi.c		\
-			ft_strncat.c		\
-			ft_strncmp.c		\
-			ft_strncpy.c		\
-			ft_strnequ.c		\
-			ft_strnew.c			\
-			ft_strnstr.c		\
-			ft_strsplit.c		\
-			ft_strrchr.c		\
-			ft_strstr.c			\
-			ft_strsub.c			\
-			ft_strtrim.c		\
-			ft_strupper.c		\
-			ft_tolower.c		\
-			ft_toupper.c		\
-			get_next_line.c		\
-			palloc.c			\
-			\
-			printf/ft_printf.c	\
-			printf/init.c		\
-			printf/check.c		\
-			printf/opt.c		\
-			printf/conv_l.c		\
-			printf/conv_n.c		\
-			printf/conv_b.c		\
-			printf/format.c		\
+# Directories
+OBJDIR	= 	objs
+PRINTF	=	printf
 
-OBJT	= $(SRCS:.c=.o)
+# Files && Objs
+FILES 	=	free_swap			\
+			ft_atoi				\
+			ft_bzero			\
+			ft_digitcount		\
+			ft_insertstr		\
+			ft_int_tab_bubble	\
+ 			ft_isalnum 			\
+			ft_isalpha			\
+			ft_isascii			\
+			ft_isdigit			\
+			ft_isprint			\
+			ft_iswhitespace		\
+			ft_itoa_base		\
+			ft_itoa				\
+			ft_lstadd			\
+			ft_lstback			\
+			ft_lstdel			\
+			ft_lstdelone		\
+			ft_lstiter			\
+			ft_lstmap			\
+			ft_lstnew			\
+			ft_memalloc			\
+			ft_memcat			\
+			ft_memccpy			\
+			ft_memchr			\
+			ft_memcmp			\
+			ft_memcpy			\
+			ft_memdel			\
+			ft_memmove			\
+			ft_memset			\
+			ft_memswap			\
+			ft_putchar_fd		\
+			ft_putchar			\
+			ft_putendl_fd		\
+			ft_putendl			\
+			ft_putnbr_fd		\
+			ft_putnbr			\
+			ft_putstr_fd		\
+			ft_putstr			\
+			ft_putwchar_fd		\
+			ft_putwchar			\
+			ft_strcat			\
+			ft_strchr			\
+			ft_strclr			\
+			ft_strcmp			\
+			ft_strcpy			\
+			ft_strdel			\
+			ft_strdup			\
+			ft_strendcpy		\
+			ft_strequ			\
+			ft_strfind			\
+			ft_striter			\
+			ft_striteri			\
+			ft_strjoin			\
+			ft_strlcat			\
+			ft_strlen			\
+			ft_strmap			\
+			ft_strmapi			\
+			ft_strncat			\
+			ft_strncmp			\
+			ft_strncpy			\
+			ft_strnequ			\
+			ft_strnew			\
+			ft_strnstr			\
+			ft_strsplit			\
+			ft_strrchr			\
+			ft_strstr			\
+			ft_strsub			\
+			ft_strtrim			\
+			ft_strupper			\
+			ft_tolower			\
+			ft_toupper			\
+			get_next_line		\
+			palloc				\
+			\
+			$(PRINTF)/check		\
+			$(PRINTF)/conv_l		\
+			$(PRINTF)/conv_n		\
+			$(PRINTF)/conv_b		\
+			$(PRINTF)/format		\
+			$(PRINTF)/ft_printf	\
+			$(PRINTF)/init			\
+			$(PRINTF)/opt			\
+
+OBJ	   := 	$(addsuffix .o, $(FILES))
+
+# Paths foreach
+OBJP 	=	$(addprefix $(OBJDIR)/, $(OBJ))
 
 # **************************************************************************** #
+
+# SPECIAL CHARS
 
 LOG_CLEAR		= \033[2K
 LOG_UP			= \033[A
@@ -121,29 +130,36 @@ LOG_VIOLET		= \033[1;35m
 LOG_CYAN		= \033[1;36m
 LOG_WHITE		= \033[1;37m
 
-# Bonus
+# Protect
 
 .PHONY:		clean fclean
 
 # **************************************************************************** #
 
-# Rules
+# RULES
 
-all: $(NAME)
+# Main rules
+all				: 	$(OBJDIR) $(NAME)
 
-$(NAME): $(OBJT)
-	@ar rc $(NAME) $(OBJT)
-	@ranlib $(NAME)
-	@echo "--$(LOG_CLEAR)$(LOG_GREEN)$(NAME)$(LOG_NOCOLOR) ........................ $(LOG_VIOLET)Cake Done$(LOG_NOCOLOR)$(LOG_UP)"
+re				: 	fclean all
 
-%.o: %.c
-	@echo "--$(LOG_CLEAR)$(LOG_GREEN)$(NAME)$(LOG_NOCOLOR) ........................ $(LOG_VIOLET)$<$(LOG_NOCOLOR)$(LOG_UP)"
-	@$(CC) $(CFLAGS) $(ADDFLAGS) -c -o $@ $^ -I ./printf -I ./
+# Compilation rules
+$(OBJDIR)		:
+					@mkdir -p $@ 2>&-
+					@cd $@ && mkdir -p $(PRINTF) 2>&-
 
-clean:
-	@rm -f $(OBJT)
+$(NAME)			:	$(OBJP)
+					@ar rc $@ $^
+					@ranlib $@
+					@echo "--$(LOG_CLEAR)$(LOG_RED)$(NAME)$(LOG_NOCOLOR) ........................ $(LOG_RED)Cake Done$(LOG_NOCOLOR)$(LOG_UP)"
 
-fclean: clean
-	@rm -f $(NAME)
+$(OBJDIR)/%.o	:	%.c
+					@echo "--$(LOG_CLEAR)$(LOG_RED)$(NAME)$(LOG_NOCOLOR) ........................ $(LOG_RED)$<$(LOG_NOCOLOR)$(LOG_UP)"
+					@$(CC) $(CFLAGS) $(ADDFLAGS) -c -o $@ $^ -I ./$(PRINTF) -I .
 
-re: fclean all
+# Clean rules
+clean			:
+					@rm -rf $(OBJDIR)
+
+fclean			: 	clean
+					@rm -f $(NAME)
