@@ -1,4 +1,5 @@
 *.o
+objs
 libft.a
 atest
 .DS_Store
