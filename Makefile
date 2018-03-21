@@ -6,11 +6,11 @@
 #    By: aridolfi <aridolfi@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/07 22:47:07 by aridolfi          #+#    #+#              #
-#    Updated: 2018/02/26 12:16:38 by aridolfi         ###   ########.fr        #
+#    Updated: 2018/03/21 12:42:47 by aridolfi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-# Executable
+# Library
 NAME	= libft.a
 
 # Compilation
@@ -98,13 +98,13 @@ FILES 	=	free_swap			\
 			palloc				\
 			\
 			$(PRINTF)/check		\
-			$(PRINTF)/conv_l		\
-			$(PRINTF)/conv_n		\
-			$(PRINTF)/conv_b		\
-			$(PRINTF)/format		\
+			$(PRINTF)/conv_l	\
+			$(PRINTF)/conv_n	\
+			$(PRINTF)/conv_b	\
+			$(PRINTF)/format	\
 			$(PRINTF)/ft_printf	\
-			$(PRINTF)/init			\
-			$(PRINTF)/opt			\
+			$(PRINTF)/init		\
+			$(PRINTF)/opt		\
 
 OBJ	   := 	$(addsuffix .o, $(FILES))
 
